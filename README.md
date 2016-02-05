@@ -363,7 +363,7 @@ $ ./docker-diff alpine:3.2 alpine:3.3
 
 ---
 
-Comparing changes between [alpine:3.2](https://hub.docker.com/r/library/alpine/) and [alpine:3.3](https://hub.docker.com/r/library/alpine/).
+Comparing changes between [ubuntu:wily](https://hub.docker.com/r/library/ubuntu/) and [ubuntu-debootstrap:wily](https://hub.docker.com/r/library/ubuntu-debootstrap/).
 
 ```console
 $ ./docker-diff ubuntu:wily ubuntu-debootstrap:wily
