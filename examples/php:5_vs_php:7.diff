@@ -1,0 +1,544 @@
+1597,1598c1597,1598
+< -rw------- 3082       root/.gnupg/pubring.gpg                                                                             
+< -rw------- 3082       root/.gnupg/pubring.gpg~                                                                            
+---
+> -rw------- 1488       root/.gnupg/pubring.gpg                                                                             
+> -rw------- 1488       root/.gnupg/pubring.gpg~                                                                            
+5282,5283c5282,5284
+< -rwxr-xr-x 9403176    usr/local/bin/php                                                                                   
+< -rwxr-xr-x 2460       usr/local/bin/php-config                                                                            
+---
+> -rwxr-xr-x 9528616    usr/local/bin/php                                                                                   
+> -rwxr-xr-x 2466       usr/local/bin/php-config                                                                            
+> -rwxr-xr-x 9676128    usr/local/bin/phpdbg                                                                                
+5293c5294
+< -rw-r--r-- 5492       usr/local/include/php/TSRM/TSRM.h                                                                   
+---
+> -rw-r--r-- 6207       usr/local/include/php/TSRM/TSRM.h                                                                   
+5299,5300c5300,5301
+< -rw-r--r-- 115        usr/local/include/php/TSRM/tsrm_strtok_r.h                                                          
+< -rw-r--r-- 3217       usr/local/include/php/TSRM/tsrm_win32.h                                                             
+---
+> -rw-r--r-- 143        usr/local/include/php/TSRM/tsrm_strtok_r.h                                                          
+> -rw-r--r-- 3263       usr/local/include/php/TSRM/tsrm_win32.h                                                             
+5302,5309c5303,5313
+< -rw-r--r-- 26921      usr/local/include/php/Zend/zend.h                                                                   
+< -rw-r--r-- 41352      usr/local/include/php/Zend/zend_API.h                                                               
+< -rw-r--r-- 12104      usr/local/include/php/Zend/zend_alloc.h                                                             
+< -rw-r--r-- 2389       usr/local/include/php/Zend/zend_ast.h                                                               
+< -rw-r--r-- 1627       usr/local/include/php/Zend/zend_build.h                                                             
+< -rw-r--r-- 1627       usr/local/include/php/Zend/zend_builtin_functions.h                                                 
+< -rw-r--r-- 1859       usr/local/include/php/Zend/zend_closures.h                                                          
+< -rw-r--r-- 35390      usr/local/include/php/Zend/zend_compile.h                                                           
+---
+> -rw-r--r-- 12748      usr/local/include/php/Zend/zend.h                                                                   
+> -rw-r--r-- 55667      usr/local/include/php/Zend/zend_API.h                                                               
+> -rw-r--r-- 19171      usr/local/include/php/Zend/zend_alloc.h                                                             
+> -rw-r--r-- 2629       usr/local/include/php/Zend/zend_alloc_sizes.h                                                       
+> -rw-r--r-- 3658       usr/local/include/php/Zend/zend_arena.h                                                             
+> -rw-r--r-- 8006       usr/local/include/php/Zend/zend_ast.h                                                               
+> -rw-r--r-- 4902       usr/local/include/php/Zend/zend_bitset.h                                                            
+> -rw-r--r-- 1626       usr/local/include/php/Zend/zend_build.h                                                             
+> -rw-r--r-- 1613       usr/local/include/php/Zend/zend_builtin_functions.h                                                 
+> -rw-r--r-- 2002       usr/local/include/php/Zend/zend_closures.h                                                          
+> -rw-r--r-- 32608      usr/local/include/php/Zend/zend_compile.h                                                           
+5311,5330c5315,5333
+< -rw-r--r-- 2502       usr/local/include/php/Zend/zend_config.nw.h                                                         
+< -rw-r--r-- 3271       usr/local/include/php/Zend/zend_config.w32.h                                                        
+< -rw-r--r-- 6233       usr/local/include/php/Zend/zend_constants.h                                                         
+< -rw-r--r-- 2048       usr/local/include/php/Zend/zend_dtrace.h                                                            
+< -rw-r--r-- 1906       usr/local/include/php/Zend/zend_dynamic_array.h                                                     
+< -rw-r--r-- 2159       usr/local/include/php/Zend/zend_errors.h                                                            
+< -rw-r--r-- 3045       usr/local/include/php/Zend/zend_exceptions.h                                                        
+< -rw-r--r-- 14477      usr/local/include/php/Zend/zend_execute.h                                                           
+< -rw-r--r-- 4617       usr/local/include/php/Zend/zend_extensions.h                                                        
+< -rw-r--r-- 15875      usr/local/include/php/Zend/zend_float.h                                                             
+< -rw-r--r-- 7407       usr/local/include/php/Zend/zend_gc.h                                                                
+< -rw-r--r-- 2666       usr/local/include/php/Zend/zend_generators.h                                                        
+< -rw-r--r-- 7479       usr/local/include/php/Zend/zend_globals.h                                                           
+< -rw-r--r-- 3226       usr/local/include/php/Zend/zend_globals_macros.h                                                    
+< -rw-r--r-- 18195      usr/local/include/php/Zend/zend_hash.h                                                              
+< -rw-r--r-- 2419       usr/local/include/php/Zend/zend_highlight.h                                                         
+< -rw-r--r-- 1470       usr/local/include/php/Zend/zend_indent.h                                                            
+< -rw-r--r-- 10003      usr/local/include/php/Zend/zend_ini.h                                                               
+< -rw-r--r-- 2702       usr/local/include/php/Zend/zend_ini_parser.h                                                        
+< -rw-r--r-- 2003       usr/local/include/php/Zend/zend_ini_scanner.h                                                       
+---
+> -rw-r--r-- 2500       usr/local/include/php/Zend/zend_config.nw.h                                                         
+> -rw-r--r-- 2782       usr/local/include/php/Zend/zend_config.w32.h                                                        
+> -rw-r--r-- 5925       usr/local/include/php/Zend/zend_constants.h                                                         
+> -rw-r--r-- 1951       usr/local/include/php/Zend/zend_dtrace.h                                                            
+> -rw-r--r-- 2158       usr/local/include/php/Zend/zend_errors.h                                                            
+> -rw-r--r-- 3770       usr/local/include/php/Zend/zend_exceptions.h                                                        
+> -rw-r--r-- 13979      usr/local/include/php/Zend/zend_execute.h                                                           
+> -rw-r--r-- 5340       usr/local/include/php/Zend/zend_extensions.h                                                        
+> -rw-r--r-- 15552      usr/local/include/php/Zend/zend_float.h                                                             
+> -rw-r--r-- 4529       usr/local/include/php/Zend/zend_gc.h                                                                
+> -rw-r--r-- 7363       usr/local/include/php/Zend/zend_generators.h                                                        
+> -rw-r--r-- 7083       usr/local/include/php/Zend/zend_globals.h                                                           
+> -rw-r--r-- 3216       usr/local/include/php/Zend/zend_globals_macros.h                                                    
+> -rw-r--r-- 31230      usr/local/include/php/Zend/zend_hash.h                                                              
+> -rw-r--r-- 2376       usr/local/include/php/Zend/zend_highlight.h                                                         
+> -rw-r--r-- 1954       usr/local/include/php/Zend/zend_inheritance.h                                                       
+> -rw-r--r-- 9628       usr/local/include/php/Zend/zend_ini.h                                                               
+> -rw-r--r-- 2752       usr/local/include/php/Zend/zend_ini_parser.h                                                        
+> -rw-r--r-- 1981       usr/local/include/php/Zend/zend_ini_scanner.h                                                       
+5332,5362c5335,5370
+< -rw-r--r-- 4044       usr/local/include/php/Zend/zend_interfaces.h                                                        
+< -rw-r--r-- 1646       usr/local/include/php/Zend/zend_istdiostream.h                                                      
+< -rw-r--r-- 3771       usr/local/include/php/Zend/zend_iterators.h                                                         
+< -rw-r--r-- 8275       usr/local/include/php/Zend/zend_language_parser.h                                                   
+< -rw-r--r-- 2696       usr/local/include/php/Zend/zend_language_scanner.h                                                  
+< -rw-r--r-- 313        usr/local/include/php/Zend/zend_language_scanner_defs.h                                             
+< -rw-r--r-- 5218       usr/local/include/php/Zend/zend_list.h                                                              
+< -rw-r--r-- 3977       usr/local/include/php/Zend/zend_llist.h                                                             
+< -rw-r--r-- 5094       usr/local/include/php/Zend/zend_modules.h                                                           
+< -rw-r--r-- 5105       usr/local/include/php/Zend/zend_multibyte.h                                                         
+< -rw-r--r-- 3746       usr/local/include/php/Zend/zend_multiply.h                                                          
+< -rw-r--r-- 9713       usr/local/include/php/Zend/zend_object_handlers.h                                                   
+< -rw-r--r-- 2215       usr/local/include/php/Zend/zend_objects.h                                                           
+< -rw-r--r-- 4387       usr/local/include/php/Zend/zend_objects_API.h                                                       
+< -rw-r--r-- 32479      usr/local/include/php/Zend/zend_operators.h                                                         
+< -rw-r--r-- 4314       usr/local/include/php/Zend/zend_ptr_stack.h                                                         
+< -rw-r--r-- 1655       usr/local/include/php/Zend/zend_qsort.h                                                             
+< -rw-r--r-- 4084       usr/local/include/php/Zend/zend_signal.h                                                            
+< -rw-r--r-- 2381       usr/local/include/php/Zend/zend_stack.h                                                             
+< -rw-r--r-- 1857       usr/local/include/php/Zend/zend_static_allocator.h                                                  
+< -rw-r--r-- 2950       usr/local/include/php/Zend/zend_stream.h                                                            
+< -rw-r--r-- 2909       usr/local/include/php/Zend/zend_string.h                                                            
+< -rw-r--r-- 1867       usr/local/include/php/Zend/zend_strtod.h                                                            
+< -rw-r--r-- 6941       usr/local/include/php/Zend/zend_ts_hash.h                                                           
+< -rw-r--r-- 2358       usr/local/include/php/Zend/zend_types.h                                                             
+< -rw-r--r-- 3850       usr/local/include/php/Zend/zend_variables.h                                                         
+< -rw-r--r-- 12130      usr/local/include/php/Zend/zend_virtual_cwd.h                                                       
+< -rw-r--r-- 1422       usr/local/include/php/Zend/zend_vm.h                                                                
+< -rw-r--r-- 165966     usr/local/include/php/Zend/zend_vm_def.h                                                            
+< -rw-r--r-- 1377700    usr/local/include/php/Zend/zend_vm_execute.h                                                        
+< -rw-r--r-- 8807       usr/local/include/php/Zend/zend_vm_opcodes.h                                                        
+---
+> -rw-r--r-- 4321       usr/local/include/php/Zend/zend_interfaces.h                                                        
+> -rw-r--r-- 1645       usr/local/include/php/Zend/zend_istdiostream.h                                                      
+> -rw-r--r-- 3585       usr/local/include/php/Zend/zend_iterators.h                                                         
+> -rw-r--r-- 8148       usr/local/include/php/Zend/zend_language_parser.h                                                   
+> -rw-r--r-- 2820       usr/local/include/php/Zend/zend_language_scanner.h                                                  
+> -rw-r--r-- 298        usr/local/include/php/Zend/zend_language_scanner_defs.h                                             
+> -rw-r--r-- 3241       usr/local/include/php/Zend/zend_list.h                                                              
+> -rw-r--r-- 3898       usr/local/include/php/Zend/zend_llist.h                                                             
+> -rw-r--r-- 4124       usr/local/include/php/Zend/zend_long.h                                                              
+> -rw-r--r-- 4866       usr/local/include/php/Zend/zend_modules.h                                                           
+> -rw-r--r-- 4948       usr/local/include/php/Zend/zend_multibyte.h                                                         
+> -rw-r--r-- 7686       usr/local/include/php/Zend/zend_multiply.h                                                          
+> -rw-r--r-- 9281       usr/local/include/php/Zend/zend_object_handlers.h                                                   
+> -rw-r--r-- 1872       usr/local/include/php/Zend/zend_objects.h                                                           
+> -rw-r--r-- 3621       usr/local/include/php/Zend/zend_objects_API.h                                                       
+> -rw-r--r-- 28257      usr/local/include/php/Zend/zend_operators.h                                                         
+> -rw-r--r-- 13450      usr/local/include/php/Zend/zend_portability.h                                                       
+> -rw-r--r-- 4325       usr/local/include/php/Zend/zend_ptr_stack.h                                                         
+> -rw-r--r-- 3096       usr/local/include/php/Zend/zend_range_check.h                                                       
+> -rw-r--r-- 4011       usr/local/include/php/Zend/zend_signal.h                                                            
+> -rw-r--r-- 4520       usr/local/include/php/Zend/zend_smart_str.h                                                         
+> -rw-r--r-- 1279       usr/local/include/php/Zend/zend_smart_str_public.h                                                  
+> -rw-r--r-- 1744       usr/local/include/php/Zend/zend_sort.h                                                              
+> -rw-r--r-- 2468       usr/local/include/php/Zend/zend_stack.h                                                             
+> -rw-r--r-- 3308       usr/local/include/php/Zend/zend_stream.h                                                            
+> -rw-r--r-- 12093      usr/local/include/php/Zend/zend_string.h                                                            
+> -rw-r--r-- 1866       usr/local/include/php/Zend/zend_strtod.h                                                            
+> -rw-r--r-- 3410       usr/local/include/php/Zend/zend_strtod_int.h                                                        
+> -rw-r--r-- 6658       usr/local/include/php/Zend/zend_ts_hash.h                                                           
+> -rw-r--r-- 31252      usr/local/include/php/Zend/zend_types.h                                                             
+> -rw-r--r-- 5944       usr/local/include/php/Zend/zend_variables.h                                                         
+> -rw-r--r-- 12157      usr/local/include/php/Zend/zend_virtual_cwd.h                                                       
+> -rw-r--r-- 1487       usr/local/include/php/Zend/zend_vm.h                                                                
+> -rw-r--r-- 234360     usr/local/include/php/Zend/zend_vm_def.h                                                            
+> -rw-r--r-- 1582906    usr/local/include/php/Zend/zend_vm_execute.h                                                        
+> -rw-r--r-- 9865       usr/local/include/php/Zend/zend_vm_opcodes.h                                                        
+5367c5375
+< -rw-r--r-- 134        usr/local/include/php/ext/date/lib/timelib_config.h                                                 
+---
+> -rw-r--r-- 313        usr/local/include/php/ext/date/lib/timelib_config.h                                                 
+5369c5377
+< -rw-r--r-- 6716       usr/local/include/php/ext/date/php_date.h                                                           
+---
+> -rw-r--r-- 7560       usr/local/include/php/ext/date/php_date.h                                                           
+5371,5380c5379
+< -rw-r--r-- 3677       usr/local/include/php/ext/dom/xml_common.h                                                          
+< drwxr-sr-x 0          usr/local/include/php/ext/ereg/                                                                     
+< -rw-r--r-- 2153       usr/local/include/php/ext/ereg/php_ereg.h                                                           
+< -rw-r--r-- 2029       usr/local/include/php/ext/ereg/php_regex.h                                                          
+< drwxr-sr-x 0          usr/local/include/php/ext/ereg/regex/                                                               
+< -rw-r--r-- 992        usr/local/include/php/ext/ereg/regex/cclass.h                                                       
+< -rw-r--r-- 2070       usr/local/include/php/ext/ereg/regex/cname.h                                                        
+< -rw-r--r-- 2165       usr/local/include/php/ext/ereg/regex/regex.h                                                        
+< -rw-r--r-- 5536       usr/local/include/php/ext/ereg/regex/regex2.h                                                       
+< -rw-r--r-- 501        usr/local/include/php/ext/ereg/regex/utils.h                                                        
+---
+> -rw-r--r-- 3681       usr/local/include/php/ext/dom/xml_common.h                                                          
+5382c5381
+< -rw-r--r-- 3618       usr/local/include/php/ext/filter/php_filter.h                                                       
+---
+> -rw-r--r-- 3729       usr/local/include/php/ext/filter/php_filter.h                                                       
+5384c5383
+< -rw-r--r-- 5444       usr/local/include/php/ext/hash/php_hash.h                                                           
+---
+> -rw-r--r-- 5484       usr/local/include/php/ext/hash/php_hash.h                                                           
+5390c5389
+< -rw-r--r-- 1730       usr/local/include/php/ext/hash/php_hash_joaat.h                                                     
+---
+> -rw-r--r-- 1729       usr/local/include/php/ext/hash/php_hash_joaat.h                                                     
+5394c5393
+< -rw-r--r-- 1856       usr/local/include/php/ext/hash/php_hash_snefru.h                                                    
+---
+> -rw-r--r-- 1855       usr/local/include/php/ext/hash/php_hash_snefru.h                                                    
+5403c5402
+< -rw-r--r-- 3914       usr/local/include/php/ext/iconv/php_iconv.h                                                         
+---
+> -rw-r--r-- 3977       usr/local/include/php/ext/iconv/php_iconv.h                                                         
+5410c5409
+< -rw-r--r-- 3071       usr/local/include/php/ext/json/php_json.h                                                           
+---
+> -rw-r--r-- 3740       usr/local/include/php/ext/json/php_json.h                                                           
+5412c5411
+< -rw-r--r-- 4589       usr/local/include/php/ext/libxml/php_libxml.h                                                       
+---
+> -rw-r--r-- 4833       usr/local/include/php/ext/libxml/php_libxml.h                                                       
+5414c5413
+< -rw-r--r-- 3312       usr/local/include/php/ext/mysqlnd/config-win.h                                                      
+---
+> -rw-r--r-- 3311       usr/local/include/php/ext/mysqlnd/config-win.h                                                      
+5416,5433c5415,5432
+< -rw-r--r-- 17973      usr/local/include/php/ext/mysqlnd/mysqlnd.h                                                         
+< -rw-r--r-- 5899       usr/local/include/php/ext/mysqlnd/mysqlnd_alloc.h                                                   
+< -rw-r--r-- 1691       usr/local/include/php/ext/mysqlnd/mysqlnd_block_alloc.h                                             
+< -rw-r--r-- 2450       usr/local/include/php/ext/mysqlnd/mysqlnd_charset.h                                                 
+< -rw-r--r-- 10164      usr/local/include/php/ext/mysqlnd/mysqlnd_debug.h                                                   
+< -rw-r--r-- 19434      usr/local/include/php/ext/mysqlnd/mysqlnd_enum_n_def.h                                              
+< -rw-r--r-- 5184       usr/local/include/php/ext/mysqlnd/mysqlnd_ext_plugin.h                                              
+< -rw-r--r-- 7653       usr/local/include/php/ext/mysqlnd/mysqlnd_libmysql_compat.h                                         
+< -rw-r--r-- 1812       usr/local/include/php/ext/mysqlnd/mysqlnd_net.h                                                     
+< -rw-r--r-- 17077      usr/local/include/php/ext/mysqlnd/mysqlnd_portability.h                                             
+< -rw-r--r-- 8984       usr/local/include/php/ext/mysqlnd/mysqlnd_priv.h                                                    
+< -rw-r--r-- 2140       usr/local/include/php/ext/mysqlnd/mysqlnd_result.h                                                  
+< -rw-r--r-- 1858       usr/local/include/php/ext/mysqlnd/mysqlnd_result_meta.h                                             
+< -rw-r--r-- 2106       usr/local/include/php/ext/mysqlnd/mysqlnd_reverse_api.h                                             
+< -rw-r--r-- 7887       usr/local/include/php/ext/mysqlnd/mysqlnd_statistics.h                                              
+< -rw-r--r-- 57125      usr/local/include/php/ext/mysqlnd/mysqlnd_structs.h                                                 
+< -rw-r--r-- 10465      usr/local/include/php/ext/mysqlnd/mysqlnd_wireprotocol.h                                            
+< -rw-r--r-- 1597       usr/local/include/php/ext/mysqlnd/php_mysqlnd.h                                                     
+---
+> -rw-r--r-- 16287      usr/local/include/php/ext/mysqlnd/mysqlnd.h                                                         
+> -rw-r--r-- 5879       usr/local/include/php/ext/mysqlnd/mysqlnd_alloc.h                                                   
+> -rw-r--r-- 1671       usr/local/include/php/ext/mysqlnd/mysqlnd_block_alloc.h                                             
+> -rw-r--r-- 2410       usr/local/include/php/ext/mysqlnd/mysqlnd_charset.h                                                 
+> -rw-r--r-- 9965       usr/local/include/php/ext/mysqlnd/mysqlnd_debug.h                                                   
+> -rw-r--r-- 20132      usr/local/include/php/ext/mysqlnd/mysqlnd_enum_n_def.h                                              
+> -rw-r--r-- 5004       usr/local/include/php/ext/mysqlnd/mysqlnd_ext_plugin.h                                              
+> -rw-r--r-- 7657       usr/local/include/php/ext/mysqlnd/mysqlnd_libmysql_compat.h                                         
+> -rw-r--r-- 1792       usr/local/include/php/ext/mysqlnd/mysqlnd_net.h                                                     
+> -rw-r--r-- 17110      usr/local/include/php/ext/mysqlnd/mysqlnd_portability.h                                             
+> -rw-r--r-- 8680       usr/local/include/php/ext/mysqlnd/mysqlnd_priv.h                                                    
+> -rw-r--r-- 2090       usr/local/include/php/ext/mysqlnd/mysqlnd_result.h                                                  
+> -rw-r--r-- 1838       usr/local/include/php/ext/mysqlnd/mysqlnd_result_meta.h                                             
+> -rw-r--r-- 2064       usr/local/include/php/ext/mysqlnd/mysqlnd_reverse_api.h                                             
+> -rw-r--r-- 7877       usr/local/include/php/ext/mysqlnd/mysqlnd_statistics.h                                              
+> -rw-r--r-- 55500      usr/local/include/php/ext/mysqlnd/mysqlnd_structs.h                                                 
+> -rw-r--r-- 10338      usr/local/include/php/ext/mysqlnd/mysqlnd_wireprotocol.h                                            
+> -rw-r--r-- 1596       usr/local/include/php/ext/mysqlnd/php_mysqlnd.h                                                     
+5438c5437
+< -rw-r--r-- 114003     usr/local/include/php/ext/pcre/pcrelib/pcre_internal.h                                              
+---
+> -rw-r--r-- 113943     usr/local/include/php/ext/pcre/pcrelib/pcre_internal.h                                              
+5441c5440
+< -rw-r--r-- 3232       usr/local/include/php/ext/pcre/php_pcre.h                                                           
+---
+> -rw-r--r-- 3346       usr/local/include/php/ext/pcre/php_pcre.h                                                           
+5443,5445c5442,5444
+< -rw-r--r-- 3091       usr/local/include/php/ext/pdo/php_pdo.h                                                             
+< -rw-r--r-- 24242      usr/local/include/php/ext/pdo/php_pdo_driver.h                                                      
+< -rw-r--r-- 2026       usr/local/include/php/ext/pdo/php_pdo_error.h                                                       
+---
+> -rw-r--r-- 2724       usr/local/include/php/ext/pdo/php_pdo.h                                                             
+> -rw-r--r-- 24460      usr/local/include/php/ext/pdo/php_pdo_driver.h                                                      
+> -rw-r--r-- 1973       usr/local/include/php/ext/pdo/php_pdo_error.h                                                       
+5447c5446
+< -rw-r--r-- 1798       usr/local/include/php/ext/phar/php_phar.h                                                           
+---
+> -rw-r--r-- 1788       usr/local/include/php/ext/phar/php_phar.h                                                           
+5449,5451c5448,5450
+< -rw-r--r-- 1298       usr/local/include/php/ext/session/mod_files.h                                                       
+< -rw-r--r-- 1292       usr/local/include/php/ext/session/mod_user.h                                                        
+< -rw-r--r-- 10122      usr/local/include/php/ext/session/php_session.h                                                     
+---
+> -rw-r--r-- 1310       usr/local/include/php/ext/session/mod_files.h                                                       
+> -rw-r--r-- 1304       usr/local/include/php/ext/session/mod_user.h                                                        
+> -rw-r--r-- 11325      usr/local/include/php/ext/session/php_session.h                                                     
+5453,5454c5452,5453
+< -rw-r--r-- 2872       usr/local/include/php/ext/simplexml/php_simplexml.h                                                 
+< -rw-r--r-- 2243       usr/local/include/php/ext/simplexml/php_simplexml_exports.h                                         
+---
+> -rw-r--r-- 2938       usr/local/include/php/ext/simplexml/php_simplexml.h                                                 
+> -rw-r--r-- 2248       usr/local/include/php/ext/simplexml/php_simplexml_exports.h                                         
+5456,5458c5455,5457
+< -rw-r--r-- 2740       usr/local/include/php/ext/spl/php_spl.h                                                             
+< -rw-r--r-- 1776       usr/local/include/php/ext/spl/spl_array.h                                                           
+< -rw-r--r-- 5955       usr/local/include/php/ext/spl/spl_directory.h                                                       
+---
+> -rw-r--r-- 2624       usr/local/include/php/ext/spl/php_spl.h                                                             
+> -rw-r--r-- 1756       usr/local/include/php/ext/spl/spl_array.h                                                           
+> -rw-r--r-- 6266       usr/local/include/php/ext/spl/spl_directory.h                                                       
+5460c5459
+< -rw-r--r-- 3216       usr/local/include/php/ext/spl/spl_engine.h                                                          
+---
+> -rw-r--r-- 3021       usr/local/include/php/ext/spl/spl_engine.h                                                          
+5463c5462
+< -rw-r--r-- 4590       usr/local/include/php/ext/spl/spl_functions.h                                                       
+---
+> -rw-r--r-- 4400       usr/local/include/php/ext/spl/spl_functions.h                                                       
+5465c5464
+< -rw-r--r-- 5721       usr/local/include/php/ext/spl/spl_iterators.h                                                       
+---
+> -rw-r--r-- 5957       usr/local/include/php/ext/spl/spl_iterators.h                                                       
+5471,5472c5470,5471
+< -rw-r--r-- 1612       usr/local/include/php/ext/standard/base64.h                                                         
+< -rw-r--r-- 7601       usr/local/include/php/ext/standard/basic_functions.h                                                
+---
+> -rw-r--r-- 1594       usr/local/include/php/ext/standard/base64.h                                                         
+> -rw-r--r-- 7717       usr/local/include/php/ext/standard/basic_functions.h                                                
+5474,5477c5473,5476
+< -rw-r--r-- 1737       usr/local/include/php/ext/standard/credits.h                                                        
+< -rw-r--r-- 5641       usr/local/include/php/ext/standard/credits_ext.h                                                    
+< -rw-r--r-- 1670       usr/local/include/php/ext/standard/credits_sapi.h                                                   
+< -rw-r--r-- 1080       usr/local/include/php/ext/standard/crypt_blowfish.h                                                 
+---
+> -rw-r--r-- 1726       usr/local/include/php/ext/standard/credits.h                                                        
+> -rw-r--r-- 5500       usr/local/include/php/ext/standard/credits_ext.h                                                    
+> -rw-r--r-- 851        usr/local/include/php/ext/standard/credits_sapi.h                                                   
+> -rw-r--r-- 1048       usr/local/include/php/ext/standard/crypt_blowfish.h                                                 
+5479c5478
+< -rw-r--r-- 1238       usr/local/include/php/ext/standard/css.h                                                            
+---
+> -rw-r--r-- 1234       usr/local/include/php/ext/standard/css.h                                                            
+5481,5484c5480,5483
+< -rw-r--r-- 1398       usr/local/include/php/ext/standard/datetime.h                                                       
+< -rw-r--r-- 1610       usr/local/include/php/ext/standard/dl.h                                                             
+< -rw-r--r-- 1730       usr/local/include/php/ext/standard/exec.h                                                           
+< -rw-r--r-- 4740       usr/local/include/php/ext/standard/file.h                                                           
+---
+> -rw-r--r-- 1386       usr/local/include/php/ext/standard/datetime.h                                                       
+> -rw-r--r-- 1589       usr/local/include/php/ext/standard/dl.h                                                             
+> -rw-r--r-- 1733       usr/local/include/php/ext/standard/exec.h                                                           
+> -rw-r--r-- 4709       usr/local/include/php/ext/standard/file.h                                                           
+5487,5490c5486,5489
+< -rw-r--r-- 1663       usr/local/include/php/ext/standard/head.h                                                           
+< -rw-r--r-- 2773       usr/local/include/php/ext/standard/html.h                                                           
+< -rw-r--r-- 482886     usr/local/include/php/ext/standard/html_tables.h                                                    
+< -rw-r--r-- 20685      usr/local/include/php/ext/standard/info.h                                                           
+---
+> -rw-r--r-- 1847       usr/local/include/php/ext/standard/head.h                                                           
+> -rw-r--r-- 2715       usr/local/include/php/ext/standard/html.h                                                           
+> -rw-r--r-- 483572     usr/local/include/php/ext/standard/html_tables.h                                                    
+> -rw-r--r-- 23155      usr/local/include/php/ext/standard/info.h                                                           
+5494,5495c5493,5494
+< -rw-r--r-- 1473       usr/local/include/php/ext/standard/pageinfo.h                                                       
+< -rw-r--r-- 4731       usr/local/include/php/ext/standard/php_array.h                                                      
+---
+> -rw-r--r-- 1469       usr/local/include/php/ext/standard/pageinfo.h                                                       
+> -rw-r--r-- 4483       usr/local/include/php/ext/standard/php_array.h                                                      
+5497,5498c5496,5497
+< -rw-r--r-- 1328       usr/local/include/php/ext/standard/php_browscap.h                                                   
+< -rw-r--r-- 1672       usr/local/include/php/ext/standard/php_crypt.h                                                      
+---
+> -rw-r--r-- 1327       usr/local/include/php/ext/standard/php_browscap.h                                                   
+> -rw-r--r-- 1683       usr/local/include/php/ext/standard/php_crypt.h                                                      
+5501c5500
+< -rw-r--r-- 2885       usr/local/include/php/ext/standard/php_dns.h                                                        
+---
+> -rw-r--r-- 2883       usr/local/include/php/ext/standard/php_dns.h                                                        
+5503,5504c5502,5503
+< -rw-r--r-- 3358       usr/local/include/php/ext/standard/php_filestat.h                                                   
+< -rw-r--r-- 1966       usr/local/include/php/ext/standard/php_fopen_wrappers.h                                             
+---
+> -rw-r--r-- 3226       usr/local/include/php/ext/standard/php_filestat.h                                                   
+> -rw-r--r-- 1973       usr/local/include/php/ext/standard/php_fopen_wrappers.h                                             
+5506,5509c5505,5508
+< -rw-r--r-- 1806       usr/local/include/php/ext/standard/php_http.h                                                       
+< -rw-r--r-- 2424       usr/local/include/php/ext/standard/php_image.h                                                      
+< -rw-r--r-- 2526       usr/local/include/php/ext/standard/php_incomplete_class.h                                           
+< -rw-r--r-- 1274       usr/local/include/php/ext/standard/php_iptc.h                                                       
+---
+> -rw-r--r-- 1795       usr/local/include/php/ext/standard/php_http.h                                                       
+> -rw-r--r-- 2414       usr/local/include/php/ext/standard/php_image.h                                                      
+> -rw-r--r-- 2280       usr/local/include/php/ext/standard/php_incomplete_class.h                                           
+> -rw-r--r-- 1273       usr/local/include/php/ext/standard/php_iptc.h                                                       
+5512,5514c5511,5513
+< -rw-r--r-- 1407       usr/local/include/php/ext/standard/php_mail.h                                                       
+< -rw-r--r-- 4724       usr/local/include/php/ext/standard/php_math.h                                                       
+< -rw-r--r-- 1243       usr/local/include/php/ext/standard/php_metaphone.h                                                  
+---
+> -rw-r--r-- 1396       usr/local/include/php/ext/standard/php_mail.h                                                       
+> -rw-r--r-- 4769       usr/local/include/php/ext/standard/php_math.h                                                       
+> -rw-r--r-- 1242       usr/local/include/php/ext/standard/php_metaphone.h                                                  
+5516,5523c5515,5523
+< -rw-r--r-- 2624       usr/local/include/php/ext/standard/php_rand.h                                                       
+< -rw-r--r-- 6531       usr/local/include/php/ext/standard/php_smart_str.h                                                  
+< -rw-r--r-- 1319       usr/local/include/php/ext/standard/php_smart_str_public.h                                           
+< -rw-r--r-- 2267       usr/local/include/php/ext/standard/php_standard.h                                                   
+< -rw-r--r-- 6376       usr/local/include/php/ext/standard/php_string.h                                                     
+< -rw-r--r-- 1615       usr/local/include/php/ext/standard/php_type.h                                                       
+< -rw-r--r-- 1497       usr/local/include/php/ext/standard/php_uuencode.h                                                   
+< -rw-r--r-- 7501       usr/local/include/php/ext/standard/php_var.h                                                        
+---
+> -rw-r--r-- 2619       usr/local/include/php/ext/standard/php_rand.h                                                       
+> -rw-r--r-- 1888       usr/local/include/php/ext/standard/php_random.h                                                     
+> -rw-r--r-- 5180       usr/local/include/php/ext/standard/php_smart_string.h                                               
+> -rw-r--r-- 1404       usr/local/include/php/ext/standard/php_smart_string_public.h                                        
+> -rw-r--r-- 2358       usr/local/include/php/ext/standard/php_standard.h                                                   
+> -rw-r--r-- 6106       usr/local/include/php/ext/standard/php_string.h                                                     
+> -rw-r--r-- 1614       usr/local/include/php/ext/standard/php_type.h                                                       
+> -rw-r--r-- 1495       usr/local/include/php/ext/standard/php_uuencode.h                                                   
+> -rw-r--r-- 4719       usr/local/include/php/ext/standard/php_var.h                                                        
+5525,5528c5525,5528
+< -rw-r--r-- 1851       usr/local/include/php/ext/standard/proc_open.h                                                      
+< -rw-r--r-- 1542       usr/local/include/php/ext/standard/quot_print.h                                                     
+< -rw-r--r-- 2325       usr/local/include/php/ext/standard/scanf.h                                                          
+< -rw-r--r-- 1751       usr/local/include/php/ext/standard/sha1.h                                                           
+---
+> -rw-r--r-- 1789       usr/local/include/php/ext/standard/proc_open.h                                                      
+> -rw-r--r-- 1498       usr/local/include/php/ext/standard/quot_print.h                                                     
+> -rw-r--r-- 2308       usr/local/include/php/ext/standard/scanf.h                                                          
+> -rw-r--r-- 1745       usr/local/include/php/ext/standard/sha1.h                                                           
+5531,5533c5531,5533
+< -rw-r--r-- 2332       usr/local/include/php/ext/standard/url.h                                                            
+< -rw-r--r-- 2141       usr/local/include/php/ext/standard/url_scanner_ex.h                                                 
+< -rw-r--r-- 6738       usr/local/include/php/ext/standard/winver.h                                                         
+---
+> -rw-r--r-- 2398       usr/local/include/php/ext/standard/url.h                                                            
+> -rw-r--r-- 2138       usr/local/include/php/ext/standard/url_scanner_ex.h                                                 
+> -rw-r--r-- 6377       usr/local/include/php/ext/standard/winver.h                                                         
+5535,5536c5535,5536
+< -rw-r--r-- 6181       usr/local/include/php/ext/xml/expat_compat.h                                                        
+< -rw-r--r-- 4577       usr/local/include/php/ext/xml/php_xml.h                                                             
+---
+> -rw-r--r-- 6493       usr/local/include/php/ext/xml/expat_compat.h                                                        
+> -rw-r--r-- 4641       usr/local/include/php/ext/xml/php_xml.h                                                             
+5539,5542c5539,5544
+< -rw-r--r-- 10129      usr/local/include/php/main/SAPI.h                                                                   
+< -rw-r--r-- 3938       usr/local/include/php/main/build-defs.h                                                             
+< -rw-r--r-- 2816       usr/local/include/php/main/fopen_wrappers.h                                                         
+< -rw-r--r-- 11974      usr/local/include/php/main/php.h                                                                    
+---
+> -rw-r--r-- 9654       usr/local/include/php/main/SAPI.h                                                                   
+> -rw-r--r-- 3984       usr/local/include/php/main/build-defs.h                                                             
+> -rw-r--r-- 5018       usr/local/include/php/main/fastcgi.h                                                                
+> -rw-r--r-- 2710       usr/local/include/php/main/fopen_wrappers.h                                                         
+> -rw-r--r-- 3058       usr/local/include/php/main/http_status_codes.h                                                      
+> -rw-r--r-- 11799      usr/local/include/php/main/php.h                                                                    
+5544,5545c5546,5547
+< -rw-r--r-- 58099      usr/local/include/php/main/php_config.h                                                             
+< -rw-r--r-- 1508       usr/local/include/php/main/php_content_types.h                                                      
+---
+> -rw-r--r-- 57747      usr/local/include/php/main/php_config.h                                                             
+> -rw-r--r-- 1500       usr/local/include/php/main/php_content_types.h                                                      
+5547,5564c5549,5566
+< -rw-r--r-- 4174       usr/local/include/php/main/php_globals.h                                                            
+< -rw-r--r-- 3758       usr/local/include/php/main/php_ini.h                                                                
+< -rw-r--r-- 2670       usr/local/include/php/main/php_main.h                                                               
+< -rw-r--r-- 3604       usr/local/include/php/main/php_memory_streams.h                                                     
+< -rw-r--r-- 9811       usr/local/include/php/main/php_network.h                                                            
+< -rw-r--r-- 1747       usr/local/include/php/main/php_open_temporary_file.h                                                
+< -rw-r--r-- 10285      usr/local/include/php/main/php_output.h                                                             
+< -rw-r--r-- 3691       usr/local/include/php/main/php_reentrancy.h                                                         
+< -rw-r--r-- 1931       usr/local/include/php/main/php_scandir.h                                                            
+< -rw-r--r-- 4741       usr/local/include/php/main/php_stdint.h                                                             
+< -rw-r--r-- 30442      usr/local/include/php/main/php_streams.h                                                            
+< -rw-r--r-- 1574       usr/local/include/php/main/php_syslog.h                                                             
+< -rw-r--r-- 1561       usr/local/include/php/main/php_ticks.h                                                              
+< -rw-r--r-- 2051       usr/local/include/php/main/php_variables.h                                                          
+< -rw-r--r-- 266        usr/local/include/php/main/php_version.h                                                            
+< -rw-r--r-- 3437       usr/local/include/php/main/rfc1867.h                                                                
+< -rw-r--r-- 7022       usr/local/include/php/main/snprintf.h                                                               
+< -rw-r--r-- 2070       usr/local/include/php/main/spprintf.h                                                               
+---
+> -rw-r--r-- 4209       usr/local/include/php/main/php_globals.h                                                            
+> -rw-r--r-- 3771       usr/local/include/php/main/php_ini.h                                                                
+> -rw-r--r-- 2584       usr/local/include/php/main/php_main.h                                                               
+> -rw-r--r-- 3464       usr/local/include/php/main/php_memory_streams.h                                                     
+> -rw-r--r-- 9994       usr/local/include/php/main/php_network.h                                                            
+> -rw-r--r-- 1682       usr/local/include/php/main/php_open_temporary_file.h                                                
+> -rw-r--r-- 9788       usr/local/include/php/main/php_output.h                                                             
+> -rw-r--r-- 3690       usr/local/include/php/main/php_reentrancy.h                                                         
+> -rw-r--r-- 1930       usr/local/include/php/main/php_scandir.h                                                            
+> -rw-r--r-- 5331       usr/local/include/php/main/php_stdint.h                                                             
+> -rw-r--r-- 29954      usr/local/include/php/main/php_streams.h                                                            
+> -rw-r--r-- 1573       usr/local/include/php/main/php_syslog.h                                                             
+> -rw-r--r-- 1588       usr/local/include/php/main/php_ticks.h                                                              
+> -rw-r--r-- 2067       usr/local/include/php/main/php_variables.h                                                          
+> -rw-r--r-- 264        usr/local/include/php/main/php_version.h                                                            
+> -rw-r--r-- 3375       usr/local/include/php/main/rfc1867.h                                                                
+> -rw-r--r-- 7045       usr/local/include/php/main/snprintf.h                                                               
+> -rw-r--r-- 2302       usr/local/include/php/main/spprintf.h                                                               
+5566,5571c5568,5573
+< -rw-r--r-- 5971       usr/local/include/php/main/streams/php_stream_context.h                                             
+< -rw-r--r-- 7212       usr/local/include/php/main/streams/php_stream_filter_api.h                                          
+< -rw-r--r-- 2116       usr/local/include/php/main/streams/php_stream_glob_wrapper.h                                        
+< -rw-r--r-- 3510       usr/local/include/php/main/streams/php_stream_mmap.h                                                
+< -rw-r--r-- 3799       usr/local/include/php/main/streams/php_stream_plain_wrapper.h                                       
+< -rw-r--r-- 7900       usr/local/include/php/main/streams/php_stream_transport.h                                           
+---
+> -rw-r--r-- 5833       usr/local/include/php/main/streams/php_stream_context.h                                             
+> -rw-r--r-- 6944       usr/local/include/php/main/streams/php_stream_filter_api.h                                          
+> -rw-r--r-- 2062       usr/local/include/php/main/streams/php_stream_glob_wrapper.h                                        
+> -rw-r--r-- 3439       usr/local/include/php/main/streams/php_stream_mmap.h                                                
+> -rw-r--r-- 3667       usr/local/include/php/main/streams/php_stream_plain_wrapper.h                                       
+> -rw-r--r-- 7747       usr/local/include/php/main/streams/php_stream_transport.h                                           
+5573,5575c5575,5576
+< -rw-r--r-- 3032       usr/local/include/php/main/streams/php_streams_int.h                                                
+< -rw-r--r-- 1653       usr/local/include/php/main/win32_internal_function_disabled.h                                       
+< -rw-r--r-- 2693       usr/local/include/php/main/win95nt.h                                                                
+---
+> -rw-r--r-- 2936       usr/local/include/php/main/streams/php_streams_int.h                                                
+> -rw-r--r-- 2645       usr/local/include/php/main/win95nt.h                                                                
+5578c5579
+< -rw-r--r-- 1922       usr/local/include/php/sapi/cli/cli.h                                                                
+---
+> -rw-r--r-- 1897       usr/local/include/php/sapi/cli/cli.h                                                                
+5728,5731c5729,5732
+< -rw-r--r-- 6759       usr/local/lib/php/build/Makefile.global                                                             
+< -rw-r--r-- 80503      usr/local/lib/php/build/acinclude.m4                                                                
+< -rwxr-xr-x 45079      usr/local/lib/php/build/config.guess                                                                
+< -rwxr-xr-x 35782      usr/local/lib/php/build/config.sub                                                                  
+---
+> -rw-r--r-- 7236       usr/local/lib/php/build/Makefile.global                                                             
+> -rw-r--r-- 82119      usr/local/lib/php/build/acinclude.m4                                                                
+> -rwxr-xr-x 42938      usr/local/lib/php/build/config.guess                                                                
+> -rwxr-xr-x 35987      usr/local/lib/php/build/config.sub                                                                  
+5735,5736c5736,5737
+< -rw-r--r-- 4690       usr/local/lib/php/build/phpize.m4                                                                   
+< -rw-r--r-- 79950      usr/local/lib/php/build/run-tests.php                                                               
+---
+> -rw-r--r-- 4698       usr/local/lib/php/build/phpize.m4                                                                   
+> -rw-r--r-- 82909      usr/local/lib/php/build/run-tests.php                                                               
+5762,5764c5763,5765
+< drwxr-sr-x 0          usr/local/lib/php/extensions/no-debug-non-zts-20131226/                                             
+< -rwxr-xr-x 1272544    usr/local/lib/php/extensions/no-debug-non-zts-20131226/opcache.a                                    
+< -rwxr-xr-x 591368     usr/local/lib/php/extensions/no-debug-non-zts-20131226/opcache.so                                   
+---
+> drwxr-sr-x 0          usr/local/lib/php/extensions/no-debug-non-zts-20151012/                                             
+> -rwxr-xr-x 1846324    usr/local/lib/php/extensions/no-debug-non-zts-20151012/opcache.a                                    
+> -rwxr-xr-x 897424     usr/local/lib/php/extensions/no-debug-non-zts-20151012/opcache.so                                   
+5806c5807
+< -rw-r--r-- 10805      usr/local/php/man/man1/phar.1                                                                       
+---
+> -rw-r--r-- 10804      usr/local/php/man/man1/phar.1                                                                       
+5808,5810c5809,5812
+< -rw-r--r-- 1758       usr/local/php/man/man1/php-config.1                                                                 
+< -rw-r--r-- 9457       usr/local/php/man/man1/php.1                                                                        
+< -rw-r--r-- 1016       usr/local/php/man/man1/phpize.1                                                                     
+---
+> -rw-r--r-- 1757       usr/local/php/man/man1/php-config.1                                                                 
+> -rw-r--r-- 9456       usr/local/php/man/man1/php.1                                                                        
+> -rw-r--r-- 1316       usr/local/php/man/man1/phpdbg.1                                                                     
+> -rw-r--r-- 1015       usr/local/php/man/man1/phpize.1                                                                     
+5815a5818,5820
+> drwxr-sr-x 0          usr/local/var/                                                                                      
+> drwxr-sr-x 0          usr/local/var/log/                                                                                  
+> drwxr-sr-x 0          usr/local/var/run/                                                                                  
