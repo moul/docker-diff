@@ -1,0 +1,30 @@
+4c4
+< -rwxr-xr-x 977376     bin/[                                                                                               
+---
+> -rwxr-xr-x 1031384    bin/[                                                                                               
+105c105
+< -rwxr-xr-x 223440     bin/getconf                                                                                         
+---
+> -rwxr-xr-x 81171      bin/getconf                                                                                         
+151a152
+> -rwxr-xr-x 0          bin/last                                                                                            
+257a259
+> -rwxr-xr-x 0          bin/runlevel                                                                                        
+344a347
+> -rwxr-xr-x 0          bin/users                                                                                           
+351a355
+> -rwxr-xr-x 0          bin/wall                                                                                            
+356a361
+> -rwxr-xr-x 0          bin/who                                                                                             
+370c375
+< -rw-r--r-- 304        etc/group                                                                                           
+---
+> -rw-rw-r-- 304        etc/group                                                                                           
+375c380
+< -rw-r--r-- 334        etc/passwd                                                                                          
+---
+> -rw-rw-r-- 334        etc/passwd                                                                                          
+377c382
+< -rw-r--r-- 243        etc/shadow                                                                                          
+---
+> -rw-rw-r-- 243        etc/shadow                                                                                          

@@ -1,0 +1,35 @@
+4c4
+< -rwxr-xr-x 830776     bin/[                                                                                               
+---
+> -rwxr-xr-x 1031384    bin/[                                                                                               
+105c105
+< -rwxr-xr-x 22760      bin/getconf                                                                                         
+---
+> -rwxr-xr-x 81171      bin/getconf                                                                                         
+375c375
+< -rw-r--r-- 304        etc/group                                                                                           
+---
+> -rw-rw-r-- 304        etc/group                                                                                           
+380,381c380
+< -rw-r--r-- 497        etc/nsswitch.conf                                                                                   
+< -rw-r--r-- 334        etc/passwd                                                                                          
+---
+> -rw-rw-r-- 334        etc/passwd                                                                                          
+383c382
+< -rw-r--r-- 243        etc/shadow                                                                                          
+---
+> -rw-rw-r-- 243        etc/shadow                                                                                          
+385,397d383
+< drwxr-xr-x 0          lib/                                                                                                
+< -rwxr-xr-x 140928     lib/ld-linux-x86-64.so.2                                                                            
+< -rwxr-xr-x 1729984    lib/libc.so.6                                                                                       
+< -rw-r--r-- 1051056    lib/libm.so.6                                                                                       
+< -rw-r--r-- 89104      lib/libnsl.so.1                                                                                     
+< -rw-r--r-- 31632      lib/libnss_compat.so.2                                                                              
+< -rw-r--r-- 22952      lib/libnss_dns.so.2                                                                                 
+< -rw-r--r-- 47712      lib/libnss_files.so.2                                                                               
+< -rw-r--r-- 22992      lib/libnss_hesiod.so.2                                                                              
+< -rw-r--r-- 43592      lib/libnss_nis.so.2                                                                                 
+< -rw-r--r-- 51744      lib/libnss_nisplus.so.2                                                                             
+< -rw-r--r-- 84856      lib/libresolv.so.2                                                                                  
+< lrwxrwxrwx 0          lib64                                                                                               
