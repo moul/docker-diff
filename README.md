@@ -147,7 +147,7 @@ Status: Downloaded newer image for ubuntu-debootstrap:wily
 
 ## Sub-project
 
-* [docker-promote](https://github.com/Wealthforge-Technologies/docker-promote) ([@Wealthforge-Technologies](https://github.com/Wealthforge-Technologies))
+* [docker-promote](https://github.com/Wealthforge-Technologies/docker-promote): promote a docker image only if it is different than than the one presently there. ([@Wealthforge-Technologies](https://github.com/Wealthforge-Technologies))
 
 ## License
 
