@@ -26,5 +26,8 @@ fi
 diff \
  <(docker export ${CONTAINER_A_ID} | docker run -i --rm ${TEST_IMAGE} tar tvf - | awk "${AWK_STATEMENT}") \
  <(docker export ${CONTAINER_B_ID} | docker run -i --rm ${TEST_IMAGE} tar tvf - | awk "${AWK_STATEMENT}")
+code=$?
 
 docker rm -fv ${CONTAINER_A_ID} ${CONTAINER_B_ID} > /dev/null
+
+exit $code
