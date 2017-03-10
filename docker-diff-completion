@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+#
+# Shell completion for docker-diff
+#
+
+function _docker_diff_completion() {
+    local cur
+    if [[ "${#COMP_WORDS[@]}" -le 3 ]]
+    then
+        cur="${COMP_WORDS[COMP_CWORD]}"
+        COMPREPLY=( $(compgen -W "$(docker images --format "{{.Repository}}:{{.Tag}}")" -- ${cur}) )
+        return 0
+    else
+        return 1
+    fi
+}
+
+complete -F _docker_diff_completion docker-diff
