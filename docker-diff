@@ -7,8 +7,6 @@
 #   docker-diff alpine:3.4 alpine:3.5
 #
 
-set -e
-
 CONTAINER_A_ID=$(docker create $1 /bin/sh)
 CONTAINER_B_ID=$(docker create $2 /bin/sh)
 
