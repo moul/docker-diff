@@ -8,7 +8,7 @@
 #
 
 TEST_IMAGE='busybox'
-if [[ $(docker images -q ${TEST_IMAGE} | wc -l) < 1 ]]
+if [ $(docker images -q ${TEST_IMAGE} | wc -l) -lt 1 ]
 then
     docker pull ${TEST_IMAGE}
 fi
