@@ -5,9 +5,9 @@
 
 ### On macOS via Homebrew
 
-`brew install joenyland/docker/docker-diff`
+`brew install moul/moul/docker-diff`
 
-Or `brew tap joenyland/docker` and then `brew install docker-diff`
+Or `brew tap moul/moul` and then `brew install docker-diff`
 
 ## Usage
 
