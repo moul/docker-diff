@@ -7,6 +7,12 @@
 #   docker-diff alpine:3.4 alpine:3.5
 #
 
+TEST_IMAGE='busybox'
+if [[ $(docker images -q ${TEST_IMAGE} | wc -l) < 1 ]]
+then
+    docker pull ${TEST_IMAGE}
+fi
+
 CONTAINER_A_ID=$(docker create $1 /bin/sh)
 CONTAINER_B_ID=$(docker create $2 /bin/sh)
 
@@ -18,7 +24,7 @@ else
 fi
 
 diff \
- <(docker export ${CONTAINER_A_ID} | docker run -i --rm busybox tar tvf - | awk "${AWK_STATEMENT}") \
- <(docker export ${CONTAINER_B_ID} | docker run -i --rm busybox tar tvf - | awk "${AWK_STATEMENT}")
+ <(docker export ${CONTAINER_A_ID} | docker run -i --rm ${TEST_IMAGE} tar tvf - | awk "${AWK_STATEMENT}") \
+ <(docker export ${CONTAINER_B_ID} | docker run -i --rm ${TEST_IMAGE} tar tvf - | awk "${AWK_STATEMENT}")
 
 docker rm -fv ${CONTAINER_A_ID} ${CONTAINER_B_ID} > /dev/null
