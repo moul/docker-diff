@@ -8,7 +8,7 @@
 #
 
 TEST_IMAGE='busybox'
-if [[ $(docker images -q ${TEST_IMAGE} | wc -l) < 1 ]]
+if [ $(docker images -q ${TEST_IMAGE} | wc -l) -lt 1 ]
 then
     docker pull ${TEST_IMAGE}
 fi
@@ -26,5 +26,8 @@ fi
 diff \
  <(docker export ${CONTAINER_A_ID} | docker run -i --rm ${TEST_IMAGE} tar tvf - | awk "${AWK_STATEMENT}") \
  <(docker export ${CONTAINER_B_ID} | docker run -i --rm ${TEST_IMAGE} tar tvf - | awk "${AWK_STATEMENT}")
+code=$?
 
 docker rm -fv ${CONTAINER_A_ID} ${CONTAINER_B_ID} > /dev/null
+
+exit $code
