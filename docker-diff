@@ -1,18 +1,30 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-set -e
+#
+# Compare the contents of two Docker images.
+#
+# Usage:
+#   docker-diff alpine:3.4 alpine:3.5
+#
 
-IMAGE_A=$1
-IMAGE_B=$2
-
-container_a=$(docker create "$IMAGE_A" /dontexist)
-container_b=$(docker create "$IMAGE_B" /dontexist)
-if [ "$IGNORE_FILESIZE" = "1" ]; then
-    AWK='{printf "%-10s %-100s\n",$1,$6}'
-else
-    AWK='{printf "%-10s %-10s %-100s\n",$1,$3,$6}'
+TEST_IMAGE='busybox'
+if [[ $(docker images -q ${TEST_IMAGE} | wc -l) < 1 ]]
+then
+    docker pull ${TEST_IMAGE}
 fi
 
-diff <(docker export "$container_a" | docker run -i --rm ubuntu tar tvf - | awk "$AWK") <(docker export "$container_b" | docker run -i --rm ubuntu tar tvf - | awk "$AWK")
+CONTAINER_A_ID=$(docker create $1 /bin/sh)
+CONTAINER_B_ID=$(docker create $2 /bin/sh)
 
-docker rm -fv "$container_a" "$container_b"
+if [[ ${IGNORE_FILESIZE} == 1 ]]
+then
+    AWK_STATEMENT='{printf "%-10s %-100s\n",$1,$6}'
+else
+    AWK_STATEMENT='{printf "%-10s %-10s %-100s\n",$1,$3,$6}'
+fi
+
+diff \
+ <(docker export ${CONTAINER_A_ID} | docker run -i --rm ${TEST_IMAGE} tar tvf - | awk "${AWK_STATEMENT}") \
+ <(docker export ${CONTAINER_B_ID} | docker run -i --rm ${TEST_IMAGE} tar tvf - | awk "${AWK_STATEMENT}")
+
+docker rm -fv ${CONTAINER_A_ID} ${CONTAINER_B_ID} > /dev/null
