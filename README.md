@@ -1,6 +1,14 @@
 # docker-diff
 :whale: Compare Docker images
 
+## Installation
+
+### On macOS via Homebrew
+
+`brew install joenyland/docker/docker-diff`
+
+Or `brew tap joenyland/docker` and then `brew install docker-diff`
+
 ## Usage
 
 [See full examples](./examples).
