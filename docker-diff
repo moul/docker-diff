@@ -7,6 +7,15 @@
 #   docker-diff alpine:3.4 alpine:3.5
 #
 
+if [ -z "$2" ]
+then
+  echo "Usage: $0 img1 img2"
+  echo ""
+  echo "Example: $0 alpine:3.4 alpine:3.5"
+  echo "If you set IGNORE_FILESIZE to 1, file sizes will be ignored."
+  exit 99
+fi
+
 TEST_IMAGE='busybox'
 if [ $(docker images -q ${TEST_IMAGE} | wc -l) -lt 1 ]
 then
