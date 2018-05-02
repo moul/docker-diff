@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 #
 # Compare the contents of two Docker images.
@@ -25,18 +25,23 @@ fi
 CONTAINER_A_ID=$(docker create $1 /bin/sh)
 CONTAINER_B_ID=$(docker create $2 /bin/sh)
 
-if [[ ${IGNORE_FILESIZE} == 1 ]]
+if [ "$IGNORE_FILESIZE" = "1" ]
 then
     AWK_STATEMENT='{printf "%-10s %-100s\n",$1,$6}'
 else
     AWK_STATEMENT='{printf "%-10s %-10s %-100s\n",$1,$3,$6}'
 fi
 
-diff \
- <(docker export ${CONTAINER_A_ID} | docker run -i --rm ${TEST_IMAGE} tar tvf - | awk "${AWK_STATEMENT}") \
- <(docker export ${CONTAINER_B_ID} | docker run -i --rm ${TEST_IMAGE} tar tvf - | awk "${AWK_STATEMENT}")
+CONTAINER_A_FILE=/tmp/$(echo $1 | tr '/' '-')
+CONTAINER_B_FILE=/tmp/$(echo $2 | tr '/' '-')
+
+docker export $CONTAINER_A_ID | docker run -i --rm ${TEST_IMAGE} tar --list --verbose --file - | awk "$AWK_STATEMENT" > $CONTAINER_A_FILE
+docker export $CONTAINER_B_ID | docker run -i --rm ${TEST_IMAGE} tar --list --verbose --file - | awk "$AWK_STATEMENT" > $CONTAINER_B_FILE
+
+diff $CONTAINER_A_FILE $CONTAINER_B_FILE
 code=$?
 
-docker rm -fv ${CONTAINER_A_ID} ${CONTAINER_B_ID} > /dev/null
+rm $CONTAINER_A_FILE $CONTAINER_B_FILE
+docker rm -fv $CONTAINER_A_ID $CONTAINER_B_ID > /dev/null
 
 exit $code
