@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 # https://github.com/moul/docker-diff
 
 #
@@ -13,34 +13,30 @@ then
   echo "Usage: $0 img1 img2"
   echo ""
   echo "Example: $0 alpine:3.4 alpine:3.5"
-  echo "If you set IGNORE_FILESIZE to 1, file sizes will be ignored."
   exit 99
 fi
 
-CONTAINER_A_ID=$(docker create $1 /bin/sh)
-CONTAINER_B_ID=$(docker create $2 /bin/sh)
-
 tmpdir=$(mktemp -d)
-
-A=$1
-B=$2
+IMAGE_A=$1
+IMAGE_B=$2
+CONTAINER_A_ID=$(docker create $IMAGE_A /bin/sh)
+CONTAINER_B_ID=$(docker create $IMAGE_B /bin/sh)
 
 set -e
 docker export "${CONTAINER_A_ID}" > ${tmpdir}/A.tar
 docker export "${CONTAINER_B_ID}" > ${tmpdir}/B.tar
-mkdir -p ${tmpdir}/${A} && tar -xf ${tmpdir}/A.tar -C ${tmpdir}/${A} --exclude='./etc/mtab' --exclude='./proc' --exclude='./dev'
-mkdir -p ${tmpdir}/${B} && tar -xf ${tmpdir}/B.tar -C ${tmpdir}/${B} --exclude='./etc/mtab' --exclude='./proc' --exclude='./dev'
-diff -arq ${tmpdir}/${A} ${tmpdir}/${B} | grep -v "No such file or directory" | grep -v "is a character special file" | grep -v "is a block special file" | tee >(wc -l > ${tmpdir}/difflinecount)
+mkdir -p ${tmpdir}/${IMAGE_A} && tar -xf ${tmpdir}/A.tar -C ${tmpdir}/${IMAGE_A} --exclude='./etc/mtab' --exclude='./proc' --exclude='./dev'
+mkdir -p ${tmpdir}/${IMAGE_B} && tar -xf ${tmpdir}/B.tar -C ${tmpdir}/${IMAGE_B} --exclude='./etc/mtab' --exclude='./proc' --exclude='./dev'
+diff -arq ${tmpdir}/${IMAGE_A} ${tmpdir}/${IMAGE_B} | grep -v "No such file or directory" | grep -v "is a character special file" | grep -v "is a block special file" | tee ${tmpdir}/diff
+cat ${tmpdir}/diff | wc -l > ${tmpdir}/difflinecount
 set +e
 
 code=1
-if [[ $(echo `cat ${tmpdir}/difflinecount`) == "0" ]]
-then
+if [ "$(echo `cat ${tmpdir}/difflinecount`)" = "0" ]; then
   code=0
 fi
 
 rm -rf ${tmpdir}
-
 docker rm -fv "${CONTAINER_A_ID}" "${CONTAINER_B_ID}" > /dev/null
 
 exit $code
