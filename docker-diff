@@ -30,11 +30,11 @@ docker export "${CONTAINER_A_ID}" > ${tmpdir}/A.tar
 docker export "${CONTAINER_B_ID}" > ${tmpdir}/B.tar
 mkdir -p ${tmpdir}/${A} && tar -xf ${tmpdir}/A.tar -C ${tmpdir}/${A} --exclude='./etc/mtab' --exclude='./proc' --exclude='./dev'
 mkdir -p ${tmpdir}/${B} && tar -xf ${tmpdir}/B.tar -C ${tmpdir}/${B} --exclude='./etc/mtab' --exclude='./proc' --exclude='./dev'
-diff --no-dereference -arq ${tmpdir}/${A} ${tmpdir}/${B} | grep -v "No such file or directory" | grep -v "is a character special file" | grep -v "is a block special file" | tee >(wc -l > ${tmpdir}/difflinecount)
+diff -arq ${tmpdir}/${A} ${tmpdir}/${B} | grep -v "No such file or directory" | grep -v "is a character special file" | grep -v "is a block special file" | tee >(wc -l > ${tmpdir}/difflinecount)
 set +e
 
 code=1
-if [ $(echo `cat ${tmpdir}/difflinecount` -eq 0) ]
+if [[ $(echo `cat ${tmpdir}/difflinecount`) == "0" ]]
 then
   code=0
 fi
