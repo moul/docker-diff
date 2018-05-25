@@ -29,7 +29,7 @@ mkdir -p ${tmpdir}/${IMAGE_A} && tar -xf ${tmpdir}/A.tar -C ${tmpdir}/${IMAGE_A}
 mkdir -p ${tmpdir}/${IMAGE_B} && tar -xf ${tmpdir}/B.tar -C ${tmpdir}/${IMAGE_B} --exclude='./etc/mtab' --exclude='./proc' --exclude='./dev'
 (
     cd ${tmpdir}
-    diff --unified -arq ${IMAGE_A} ${IMAGE_B} | grep -v "No such file or directory" | grep -v "is a character special file" | grep -v "is a block special file" | tee ${tmpdir}/diff
+    diff --unified -arq ${IMAGE_A} ${IMAGE_B} 2>&1 | grep -v "No such file or directory" | grep -v "is a character special file" | grep -v "is a block special file" | tee ${tmpdir}/diff
 )
 cat ${tmpdir}/diff | wc -l > ${tmpdir}/difflinecount
 set +e
