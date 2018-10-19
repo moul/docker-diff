@@ -1,4 +1,7 @@
 # docker-diff
+
+[![GuardRails badge](https://badges.production.guardrails.io/moul/docker-diff.svg)](https://www.guardrails.io)
+
 :whale: Compare Docker images
 
 ## Installation
