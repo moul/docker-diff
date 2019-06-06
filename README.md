@@ -9,6 +9,17 @@
 
 Or `brew tap moul/moul` and then `brew install docker-diff`
 
+### Linux
+
+#### zsh
+
+```bash 
+sudo git clone https://github.com/moul/docker-diff /opt/docker-diff 
+sudo ln -s /opt/docker-diff/docker-diff /usr/local/bin
+echo "source /opt/docker-diff/docker-diff-completion" >> ~/.zshrc
+source ~/.zshrc
+```
+
 ## Usage
 
 [See full examples](./examples).
